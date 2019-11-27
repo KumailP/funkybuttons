@@ -1,13 +1,21 @@
-import React, { Component } from 'react'
+import React from "react";
 
-import ExampleComponent from 'funkybuttons'
+import Button, {
+  RoundBtn,
+  DiamondBtn,
+  LeftArrowBtn,
+  RightArrowBtn
+} from "funkybuttons";
 
-export default class App extends Component {
-  render () {
-    return (
-      <div>
-        <ExampleComponent text='Modern React component module' />
-      </div>
-    )
-  }
-}
+export default () => (
+  <div className="main">
+    <h1>funkybuttons</h1>
+    <div className="buttons">
+      <Button />
+      <RoundBtn />
+      <DiamondBtn />
+      <LeftArrowBtn />
+      <RightArrowBtn />
+    </div>
+  </div>
+);
